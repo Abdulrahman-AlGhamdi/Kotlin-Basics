@@ -8,5 +8,17 @@ fun main() {
     NOTE: Please use a for (in) loop in this exercise.
     */
 
+    val numbers = arrayListOf<Double>()
+
+    var counter = 1.0
+    for (i in 1..5) numbers.add(++counter)
+
+    // Solution 1:
+    var average = 0.0
+    for (i in numbers) average += i
+    println(average / numbers.size)
+
+    // Solution 2:
+    println(numbers.average())
 
 }
